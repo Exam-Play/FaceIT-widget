@@ -1,0 +1,26 @@
+{
+  "username": "s1mple",
+  "elo": 3720,
+  "kd": "1.34",
+  "winrate": "53",
+  "matches": "5200",
+  "longest_win_streak": "13",
+  "average_headshots": "48",
+  "recent_results": [
+    "1",
+    "0",
+    "1",
+    "1",
+    "1"
+  ],
+  "kills": 21,
+  "assists": 4,
+  "deaths": 13,
+  "headshots": 44,
+  "adr": 96.5,
+  "k_d_ratio": 1.71,
+  "k_r_ratio": 1.01,
+  "wins": 23,
+  "losses": 7,
+  "win_rate": 77
+}

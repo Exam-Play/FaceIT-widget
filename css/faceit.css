@@ -1,0 +1,28 @@
+body {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Play, sans-serif;
+    font-size: 14px;
+    color: rgb(241, 241, 241);
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 36px !important;
+}
+
+h2 {
+    font-size: 28px !important;
+}
+
+p {
+    font-size: 24px ;
+}
+
+input, button {
+    padding: 8px !important;
+    font-size: 16px !important;
+    margin: 8px !important;
+}

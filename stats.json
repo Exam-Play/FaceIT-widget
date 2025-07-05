@@ -1,26 +1,30 @@
-{
-  "username": "_ExamPlay_",
-  "elo": 1635,
-  "kd": "1.18",
-  "winrate": "56",
-  "matches": "240",
-  "longest_win_streak": "7",
-  "average_headshots": "39",
-  "recent_results": [
-    "1",
-    "0",
-    "1",
-    "1",
-    "1"
-  ],
-  "kills": 17,
-  "assists": 5,
-  "deaths": 15,
-  "headshots": 42,
-  "adr": 80.87,
-  "k_d_ratio": 1.11,
-  "k_r_ratio": 0.74,
-  "wins": 19,
-  "losses": 11,
-  "win_rate": 63
+body {
+    font-family: Play, sans-serif;
+    font-size: 14px;
+    color: rgb(241, 241, 241);
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 40px !important;
+}
+
+h2 {
+    font-size: 28px !important;
+}
+
+p {
+    font-size: 24px ;
+}
+
+.background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
 }

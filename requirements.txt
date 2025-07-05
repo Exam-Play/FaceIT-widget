@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 flask
 flask-cors
+=======
+flask
+flask-cors
+>>>>>>> 42252af700a393122e0190ef25bf9e64dc5c778f
 aiohttp

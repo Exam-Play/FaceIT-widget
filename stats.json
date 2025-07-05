@@ -1,11 +1,11 @@
 {
-  "username": "s1mple",
-  "elo": 3720,
-  "kd": "1.34",
-  "winrate": "53",
-  "matches": "5200",
-  "longest_win_streak": "13",
-  "average_headshots": "48",
+  "username": "_ExamPlay_",
+  "elo": 1635,
+  "kd": "1.18",
+  "winrate": "56",
+  "matches": "240",
+  "longest_win_streak": "7",
+  "average_headshots": "39",
   "recent_results": [
     "1",
     "0",
@@ -13,14 +13,14 @@
     "1",
     "1"
   ],
-  "kills": 21,
-  "assists": 4,
-  "deaths": 13,
-  "headshots": 44,
-  "adr": 96.5,
-  "k_d_ratio": 1.71,
-  "k_r_ratio": 1.01,
-  "wins": 23,
-  "losses": 7,
-  "win_rate": 77
+  "kills": 17,
+  "assists": 5,
+  "deaths": 15,
+  "headshots": 42,
+  "adr": 80.87,
+  "k_d_ratio": 1.11,
+  "k_r_ratio": 0.74,
+  "wins": 19,
+  "losses": 11,
+  "win_rate": 63
 }

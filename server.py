@@ -3,13 +3,16 @@ from flask_cors import CORS
 import asyncio
 import json
 import time
+import os
 from threading import Thread
 from faceit import get_full_stats
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+stats_file = os.path.join(BASE_DIR, "stats.json")
 
 app = Flask(__name__)
 CORS(app)
 
-stats_file = "stats.json"
 current_username = "_ExamPlay_"
 
 def get_username():
@@ -62,7 +65,6 @@ def update_stats_loop():
             print(f"[⚠️] Не удалось обновить статистику для {username}")
 
         time.sleep(10)
-
 
 if __name__ == "__main__":
     Thread(target=update_stats_loop, daemon=True).start()

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/faceit.css">
 </head>
 <body class="mt-6">
-  <h1 id="nickname" style="margin-top: 3%; font-weight: bold;">_ExamPlay_</h1>
-  <div class="flex items-center justify-center" style="margin-top: 4.5%;">
+  <h1 id="nickname" style="margin-top: 6%; font-weight: bold;">_ExamPlay_</h1>
+  <div class="flex items-center justify-center" style="margin-top: 1%;">
     <div class="bg-[#111] text-white rounded-lg p-6 w-full max-w-7xl shadow-lg" style="border-width: 1px; border-color: #262626;">
       <div class="flex items-center mb-5">
         <img src="css\img\logo.png" width="36px" height="36px">
@@ -101,12 +101,29 @@
       </div>
     </div>
   </div>
-  <div style="top: 12%; left: 50%" class="absolute transform -translate-x-1/2 -translate-y-5/6">
-    <button class="mt-12 px-5 py-2 border border-gray-600 text-gray-200 hover:border-orange-500 hover:text-orange-500 font-semibold rounded-md transition duration-200 ease-in-out" onclick="updateNickname()">Обновить ник</button>
-  </div>
 
   <script>
     let currentNickname = "_ExamPlay_";
+
+    window.wallpaperPropertyListener = {
+      applyUserProperties: function(properties) {
+        if (properties.nickname) {
+          currentNickname = properties.nickname.value?.trim();
+          if (!currentNickname) {
+            document.getElementById("nickname").innerText = "-";
+            return;
+          }
+
+          document.getElementById("nickname").innerText = currentNickname;
+
+          fetch("http://localhost:5000/stats.json", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username: currentNickname })
+          }).then(() => loadElo());
+        }
+      }
+    };
 
     async function loadElo() {
       try {
@@ -144,23 +161,7 @@
     }
 
     async function updateNickname() {
-      window.wallpaperPropertyListener = {
-        applyUserProperties: function(properties) {
-          if (properties.nickname) {
-            currentNickname = properties.nickname.value;
-            if (!currentNickname) {
-              document.getElementById("nickname").innerText = "-";
-              return;
-            }
-
-            document.getElementById("nickname").innerText = currentNickname;
-            fetchElo(currentNickname);
-          }
-        }
-      };
-
       const nick = currentNickname?.trim();
-
       if (!nick) {
         document.getElementById("nickname").innerText = "-";
         return;
@@ -172,7 +173,7 @@
         body: JSON.stringify({ username: nick })
       });
 
-      loadElo();
+      loadElo();  
     }
 
     loadElo();

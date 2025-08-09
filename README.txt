@@ -1,65 +1,37 @@
----------------------------------- ВСЕМ ПРИВЕТ!!! --------------------------------
+------------------------------ HELLO EVERYONE!!! ------------------------------
 
-Данный виджет создан для отслеживания статистики FACEIT по дисциплине CS2 в
-реальном времени.
+This widget was created to track FACEIT statistics for the CS2 discipline
+in real time.
 
-----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
-Чтобы ПОЛЬЗОВАТЬСЯ виджетом, необходимо установить в приложении Wallpaper Engine
-обои из моей мастерской (ссылка внизу):
+To USE the widget, you need to install in the Wallpaper Engine application
+wallpapers from my workshop (link below):
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=3517480095
 
-<<<<<<< HEAD
-После установки у вас появляются обои в приложении. Далее в корне папки есть 3
-=======
-После установки у вас появляются обои в приложении. Далее в корне папки есть 2
->>>>>>> b4117ae7b8cc05b5fa17038ca94b84069f75aa2e
-ключевых файла!!!
+-------------------------------------------------------------------------------
 
-1. server.exe - файл, который работает с открытой консолью Windows, там вы можете
-   отслеживать "живой сервер" и изменения.
+After installation, you will have wallpapers in the application. Then in the
+root of the folder there are 3 key files!!!
 
-2. nocmdserver.exe - файл, который работает "фоном",  WARNING!!!  не открываются
-окна!!! Чтобы завершить процесс, необходимо делать это вручную:
+1. server.exe - a file that works with an open Windows console, there you can
+   track the "live server" and changes.
 
-		Диспетчер задач - nocmdserver.exe - Снять задачу
+2. nocmdserver.exe - a file that works "in the background", WARNING!!!
+   windows do not open!!! To complete the process, you need to do it manually:
 
-3. startupnocmdserver.vbs - файл, который активирует автозапуск сервера при
-запуске системы + который работает "фоном" без окна!!!
+         Task Manager - nocmdserver.exe - Remove task
 
-Таким образом, запускается локальный сервер (приложение) и данные обновляются в
-<<<<<<< HEAD
-реальном времени. Чтобы изменить ник - справа в свойствах обоев в Wallpaper Engine
-ищем Nickname и пишем свой ник!!! Также можно немного кастомизировать обои
-(картинки/видео на фон; прозрачность элементов; цвет фона)
-=======
-реальном времени. Чтобы изменить ник - справа в свойствах обоев ищем Nickname и
-пишем свой ник!!! Также можно немного кастомизировать обои (картинки/видео на
-фон; прозрачность элементов; цвет фона)
->>>>>>> b4117ae7b8cc05b5fa17038ca94b84069f75aa2e
+3. startupnocmdserver.vbs - a file that activates the server autostart when the
+   system starts + which runs "in the background" without a window!!!
 
-----------------------------------------------------------------------------------
+Thus, the local server (application) is started and the data is updated in real
+time. To change the nickname - on the right in the wallpaper properties in
+Wallpaper Engine look for Nickname and write your nickname!!! You can also
+customize the wallpaper a little (pictures/videos for the background;
+transparency of elements; background color; location)
 
-<<<<<<< HEAD
-Не судите строго и сообщайте об ошибках) Всем приятного использования!!!
-=======
-ГАЙД КАК СДЕЛАТЬ ПРОГРАММУ В АВТОЗАПУСКЕ ВМЕСТЕ С WINDOWS!!!
-Расположение папки с файлами строго в корне на диске C:/ !!!
+-------------------------------------------------------------------------------
 
-1. Более медленный вариант - добавить файл nocmdserver.vbs в автозагрузку:
-Нажимаем WIN+R - пишем shell:startup - добавляем файл nocmdserver.vbs
-
-2. Быстрый вариант запуска - планировщик задач Windows:
-Нажимаем WIN+R - пишем taskschd.msc - нажимаем "Создать задачу" - вводим имя
-задачи - создаем "Триггер" (там жмем начать задачу при входе в систему) -
-в действиях путь до файла nocmdserver.vbs - в условиях снимаем галочку
-"Запускать только при питании от электросети" и ставим галочку Запускать только
-при подключении к следующей сети: Любое подключение.
-
-Немного муторно, но является лучшим вариантом на данный момент!!!
-
---------------------------------------------------------------------------------
-
-Не судите строго и сообщайте об ошибках) Всем приятного использования!!!
->>>>>>> b4117ae7b8cc05b5fa17038ca94b84069f75aa2e
+Don't judge strictly and report errors) Enjoy using it everyone!!!

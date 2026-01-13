@@ -1,35 +1,35 @@
-ВСЕМ ПРИВЕТ!!!
-----------------------------------------------------------------------------------
+HELLO EVERYONE!!!
+-------------------------------------------------------------------------------------------------
 
-Данный виджет создан для отслеживания статистики FACEIT по дисциплине CS2 в
-реальном времени.
+This widget was created to track FACEIT statistics for the CS2 discipline in
+real time.
 
-----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
-Чтобы ПОЛЬЗОВАТЬСЯ виджетом, необходимо установить в приложении Wallpaper Engine
-обои из моей мастерской (ссылка внизу):
+To USE the widget, you need to install in the Wallpaper Engine application
+wallpapers from my workshop (link below):
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=3517480095
 
-После установки у вас появляются обои в приложении. Далее в корне папки есть 3
-ключевых файла!!!
+After installation, you will have wallpapers in the application. Then in the root of the folder
+there are 3 key files!!!
 
-1. server.exe - файл, который работает с открытой консолью Windows, там вы можете
-   отслеживать "живой сервер" и изменения.
+1. server.exe - a file that works with an open Windows console, there you can
+   track the "live server" and changes.
 
-2. nocmdserver.exe - файл, который работает "фоном",  WARNING!!!  не открываются
-окна!!! Чтобы завершить процесс, необходимо делать это вручную:
+2. nocmdserver.exe - a file that works "in the background", WARNING!!!
+   windows do not open!!! To complete the process, you need to do it manually:
 
-		Диспетчер задач - nocmdserver.exe - Снять задачу
+		Task Manager - nocmdserver.exe - Remove task
 
-3. startupnocmdserver.vbs - файл, который активирует автозапуск сервера при
-запуске системы + который работает "фоном" без окна!!!
+3. startupnocmdserver.vbs - a file that activates the server autostart when
+   the system starts + which runs "in the background" without a window!!!
 
-Таким образом, запускается локальный сервер (приложение) и данные обновляются в
-реальном времени. Чтобы изменить ник - справа в свойствах обоев в Wallpaper Engine
-ищем Nickname и пишем свой ник!!! Также можно немного кастомизировать обои
-(картинки/видео на фон; прозрачность элементов; цвет фона)
+Thus, the local server (application) is started and the data is updated in
+real time. To change the nickname - on the right in the wallpaper properties in Wallpaper Engine
+look for Nickname and write your nickname!!! You can also customize the wallpaper a little
+(pictures/videos for the background; transparency of elements; background color; location)
 
-----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
-Не судите строго и сообщайте об ошибках) Всем приятного использования!!!
+Don't judge strictly and report errors) Enjoy using it everyone!!!
